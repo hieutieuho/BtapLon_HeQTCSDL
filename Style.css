@@ -1,0 +1,153 @@
+﻿body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0px;
+    padding: 0px;
+}
+
+        .sidenav {
+            height: 100%;
+            width: 25%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #6f4e37;
+            overflow-x: hidden;
+        }
+
+            .sidenav div {
+                width: 85%;
+                height: auto;
+                border-radius: 20px;
+                margin: 10px;
+                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .sidenav div a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 30px;
+                    color: white;
+                }
+
+                .sidenav div:hover {
+                    background-color: #ad7b57;
+                }
+
+        .main {
+            width: 75%;
+            height: 100vh;
+            float: right;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url("C:/Users/hieut/OneDrive/Desktop/BtapLonHQTCSDL/img/99865-OLF1IN-609.jpg");
+            background-size:100%;
+        }
+
+        .main-menu {
+            width: 75%;
+            height: auto;
+            float: right;
+            background-color: transparent;
+            background-image: url("C:/Users/hieut/OneDrive/Desktop/BtapLonHQTCSDL/img/99865-OLF1IN-609.jpg");
+            background-size: 100%;
+        }
+
+            .main #Login {
+                width: 50%;
+                height: 50%;
+                background-color: white;
+                border: 5px solid #6f4e37;
+                border-radius: 20px;
+            }
+
+                #panel {
+                    width: 100%;
+                    height: 50px;
+                    background-color: #6f4e37;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                }
+
+                #form {
+                    width: 100%;
+                    height: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                }
+
+                    #form input {
+                        width: 80%;
+                        height: 40px;
+                    }
+
+            .main #Register {
+                width: 70%;
+                height: 90%;
+                background-color: white;
+                border: 5px solid #6f4e37;
+                border-radius: 20px;
+            }
+
+#menu-content {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:white;
+}
+
+#menu-content div{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-around;
+    align-items:center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ad7b57;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+li {
+    float: left;
+}
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+        li a:hover {
+            background-color: #7b4f2d;
+        }
+
+.active {
+    background-color: #7b4f2d;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+                padding-top: 15px;
+            }
+
+                .sidenav a {
+                    font-size: 18px;
+                }
+        }
+
