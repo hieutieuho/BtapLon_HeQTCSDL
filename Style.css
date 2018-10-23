@@ -100,7 +100,6 @@
 
 #menu-content {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color:white;
 }
 
 #menu-content div{
@@ -108,6 +107,9 @@
     flex-direction:column;
     justify-content:space-around;
     align-items:center;
+}
+#menu-content button{
+    margin:5px;
 }
 
 ul {
@@ -135,10 +137,89 @@ li {
 
         li a:hover {
             background-color: #7b4f2d;
+            text-decoration: none;
+            color: white;
         }
 
 .active {
     background-color: #7b4f2d;
+}
+
+#customer-order {
+    width:60%;
+    height:auto;
+    float:left;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+#grid-container {
+    width: 98%;
+    height: auto;
+    background-color: white;
+    display: flex;
+    margin: 10px 0px;
+    border: 3px solid #ad7b57;
+    border-radius: 15px;
+}
+
+#grid-container div{
+    text-align:right;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+
+#item1{
+    width:40%;
+    height:auto;
+}
+
+#item1 img{
+    width:100px;
+    height:100px;
+    margin:10px;
+    border-radius:10px;
+}
+
+#item2{
+    width:30%;
+    height:auto;
+}
+
+#item3{
+    width:20%;
+    height:auto;
+}
+
+#item4 {
+    width: 10%;
+    height: auto;
+}
+
+#customer-info {
+    width: 40%;
+    height: 98vh;
+    float: left;
+    background-color: white;
+    margin: 10px 0px 0px 0px;
+    border: 3px solid #ad7b57;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: #6f4e37;
+}
+
+#customer-info input{
+    width:90%;
+}
+#customer-info div{
+    width:90%;
+    display:flex;
+    justify-content:space-between;
 }
 
 @media screen and (max-height: 450px) {
