@@ -37,7 +37,7 @@
                 <li><a href="#cake">Bánh Ngọt</a></li>
                 <li><a href="#else">Khác</a></li>
                 <li><a href="#all">Tất cả</a></li>
-                <li><button type="button" class="btn btn-primary" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Thêm</button></li>
+                <li><button type="button" class="btn btn-primary" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Thêm</button></li>
                 <li style="display:flex;">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search" style="margin-left:50px;">
                     <button class="btn btn-success" type="submit">Search</button>
@@ -131,28 +131,61 @@
                 <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
             </div>
 
-                <label>Chọn hình ảnh:</label><br>
-                <input type="file">
+            <label>Chọn hình ảnh:</label><br>
+            <input type="file">
 
-                <input class="w3-input w3-border w3-round-large" type="text" placeholder="Tên đồ ăn/uống">
+            <input class="w3-input w3-border w3-round-large" type="text" placeholder="Tên đồ ăn/uống">
 
-                <input class="w3-input w3-border w3-round-large" type="text" placeholder="Giá">
+            <input class="w3-input w3-border w3-round-large" type="text" placeholder="Giá">
 
-                <input class="w3-input w3-border w3-round-large" type="text" placeholder="Loại đồ ăn/uống">
+            <input class="w3-input w3-border w3-round-large" type="text" placeholder="Loại đồ ăn/uống">
 
-                <button type="submit" class="btn">Sửa</button>
+            <button type="submit" class="btn">Sửa</button>
+        </form>
+    </div>
 
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
 
-            <script>
-                // Get the modal
-                var modal = document.getElementById('id01');
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <div id="id02" class="modal">
 
-                // When the user clicks anywhere outside of the modal, close it
-                window.onclick = function (event) {
-                    if (event.target == modal) {
-                        modal.style.display = "none";
-                    }
-                }
-            </script>
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer" style="margin:20px;">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            </div>
+            <div class="file">
+                <label for="file-input">Chọn hình ảnh:</label>
+                <input type="file" id="file-input">
+            </div>
+
+            <input class="w3-input w3-border w3-round-large" type="text" placeholder="Tên đồ ăn/uống">
+
+            <input class="w3-input w3-border w3-round-large" type="text" placeholder="Giá">
+
+            <input class="w3-input w3-border w3-round-large" type="text" placeholder="Loại đồ ăn/uống">
+
+            <button type="submit" class="btn btn-success">Thêm</button>
+        </form>
+    </div>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id02');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
