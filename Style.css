@@ -49,7 +49,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url("C:/Users/hieut/OneDrive/Desktop/BtapLonHQTCSDL/img/99865-OLF1IN-609.jpg");
+            background-image: url("img/99865-OLF1IN-609.jpg");
             background-size:100%;
         }
 
@@ -58,7 +58,7 @@
             height: auto;
             float: right;
             background-color: transparent;
-            background-image: url("C:/Users/hieut/OneDrive/Desktop/BtapLonHQTCSDL/img/99865-OLF1IN-609.jpg");
+            background-image: url("img/99865-OLF1IN-609.jpg");
             background-size: 100%;
         }
 
